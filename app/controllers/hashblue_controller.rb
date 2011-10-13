@@ -18,7 +18,7 @@ class HashblueController < ApplicationController
          case @messages_response.code
         when 200
            @messages = @messages_response["messages"]
-              @messages.reverse.each {|message| puts message  }
+              @messages.reverse.each {|message| puts message}
            
                   when 401
                    redirect_to AUTH_SERVER + "/oauth/authorize?client_id=#{CLIENT_ID}&client_secret=#{CLIENT_SECRET}&redirect_uri=http://" + request.host_with_port + "/callback"
