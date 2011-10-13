@@ -13,7 +13,6 @@ class RtmController < ApplicationController
   TOKEN ="95c563711e0bd8762c43b08389bfc6c6f458e3c1"
 
   include REXML
-
     RTMKEY = ENV['RTMKEY']
     RTMSECRET = ENV['RTMSECRET']
 
